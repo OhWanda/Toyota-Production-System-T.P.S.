@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #1e1e1e, #333); /* sfondo per vedere trasparenza */
+}
+
+h2 {
+  font-size: 190%;
+  color: #2F7CC7;
+}
+
+h3{
+  color: #2F7CC7;
+}
+
+p {
+  padding-right: 30%;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 0 0 10px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+main {
+  padding: 7em;
+  color: white;
+}
+
+hr {
+  border: none;
+  color: #1e1e1e;
+  height: 20px;
+}
+
+a {
+  font-size: 20px;
+  color: #2F7CC7;
+}
+
+li {
+  font-size: 20px;
+}
+
+/* Sezione con immagine parallax */
+.parallax {
+  background-image: url("images/foto_macchina.png");
+  height: 90vh;               /* altezza viewport */
+  background-attachment: fixed; /* immagine fissa */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2em;
+  text-shadow: 2px 2px 5px black;
+
+}
+
+.parallax h2 {
+  font-size: 250%;
+}
+
+/* Creazione tooltip-box */
+.tooltip-box {
+  position: absolute;
+  background: rgb(22, 22, 22);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  white-space: pre-line;
+  max-width: 400px;
+  pointer-events: none; /* il mouse non blocca */
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.tooltip-target {
+  color: #3F9DF8;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Indice */
+.indice {
+  display: flex;
+  gap: 0%;
+}
+
+.indice ol {
+  padding-right: 2%;
+}
+
+.indice li {
+  color: #2F7CC7;
+  padding-bottom: 5%;
+}
+
+.indice a {
+  text-decoration: none;
+  color: #2F7CC7;
+}
+
+/* Stile del bottone fisso */
+#scrollButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2F7CC7;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+#scrollButton:hover {
+  background-color: #0056b3;
+}
